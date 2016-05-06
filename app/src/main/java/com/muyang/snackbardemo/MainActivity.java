@@ -37,13 +37,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onDismissed(Snackbar snackbar, int event) {
                 super.onDismissed(snackbar, event);
-                Toast.makeText(MainActivity.this,"dismiss",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"SnackBar Dismiss",Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onShown(Snackbar snackbar) {
                 super.onShown(snackbar);
-                Toast.makeText(MainActivity.this,"show",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"SnackBar Show",Toast.LENGTH_SHORT).show();
             }
         });
 

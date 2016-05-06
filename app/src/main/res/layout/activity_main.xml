@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_normal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/normal"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_callback"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btn_normal"
+            android:layout_below="@+id/btn_normal"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/callback"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_custom"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btn_callback"
+            android:layout_below="@+id/btn_callback"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/custom"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

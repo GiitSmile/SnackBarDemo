@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SnackBarDemo</string>
+    <string name="normal">普通的SnackBar</string>
+    <string name="callback">带回调的SnackBar</string>
+    <string name="custom">自定义的SnackBar</string>
+
+    <string name="UNDO">UNDO</string>
+</resources>

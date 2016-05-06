@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,18 +32,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     }
                 });
-//        //SnackBar回调方法
-//        mSnackBar.setCallback(new Snackbar.Callback() {
-//            @Override
-//            public void onDismissed(Snackbar snackbar, int event) {
-//                super.onDismissed(snackbar, event);
-//            }
-//
-//            @Override
-//            public void onShown(Snackbar snackbar) {
-//                super.onShown(snackbar);
-//            }
-//        });
+        //SnackBar回调方法
+        mSnackBar.setCallback(new Snackbar.Callback() {
+            @Override
+            public void onDismissed(Snackbar snackbar, int event) {
+                super.onDismissed(snackbar, event);
+                Toast.makeText(MainActivity.this,"dismiss",Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onShown(Snackbar snackbar) {
+                super.onShown(snackbar);
+                Toast.makeText(MainActivity.this,"show",Toast.LENGTH_SHORT).show();
+            }
+        });
 
 //       1、Resources resource = (Resources) getBaseContext().getResources();
 //       ColorStateList csl = (ColorStateList) resource.getColorStateList(R.color.PeachPuff);
